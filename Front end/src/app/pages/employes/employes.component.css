@@ -1,0 +1,15 @@
+.tableEmploye {
+    text-align: center;    
+}
+
+.btn-save { 
+    margin-bottom: 1rem;
+}
+
+.btn-eliminar {
+    margin-left: 1rem;
+}
+
+h3 {
+    text-align: center;
+}

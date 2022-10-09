@@ -1,0 +1,15 @@
+h2 {
+    text-align: center;
+}
+
+.btnSave {
+   display: block;
+   margin: auto;
+}
+
+.btnCancel {
+    display: block;
+    margin: auto;
+ }
+
+

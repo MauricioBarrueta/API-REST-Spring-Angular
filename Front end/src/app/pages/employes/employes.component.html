@@ -1,0 +1,32 @@
+<h3>Lista de Empleados</h3>
+
+<button [routerLink] = "['/nuevoEmpleado']" class="btn btn-success btn-save"> Registrar nuevo empleado </button>
+
+<table class="table table-striped tableEmploye">   
+
+  <thead class="table table-dark">
+      <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Edad</th>
+          <th>Email</th>  
+          <th>Acciones</th>      
+      </tr>
+  </thead>
+
+  <tbody>
+    <!--* ngFor: Itera los elementos del array dentro de la página. Permite recorrer y para cada elemento replicar una cantidad en el DOM -->
+      <tr *ngFor="let empleado of empleados">
+          <td>{{empleado.nombre}}</td>
+          <td>{{empleado.apellido}}</td>
+          <td>{{empleado.edad}}</td>
+          <td>{{empleado.email}}</td>
+          <td>
+            <button class="btn btn-warning" (click)="getEmployeToUpdate(empleado.id)"> Editar </button>
+
+            <button class="btn btn-danger btn-eliminar" (click)="deleteEmploye(empleado.id)"> Eliminar </button>           
+          </td>
+      </tr>
+  </tbody>
+
+</table>
